@@ -2,6 +2,8 @@
 
 This simple python script checks the active port forwarding settings of ProtonVPN and uses qBittorrent's REST API to assign that port as the current incoming connections port.
 
+The build instructions here are for Windows. I don't use Linux or Mac but this is Python so likely it's not too hard.
+
 ## Configuration
 
 Ensure there is a file called `sync.ini` in the working directory of the script. 
@@ -21,7 +23,13 @@ In order to have this program run automatically when ProtonVPN connects, you'll 
 
 Run `pyinstaller -F sync.py`
 
-To set ProtonVPN to run it automatically, go to your profile settings in the app and assign the "Connect and GO" setting to run `sync.exe`.
+## Setting up ProtonVPN
+
+To set ProtonVPN to run it automatically, go to your profile settings in the app and assign the "Connect and GO" setting.
+
+Select your newly built `sync.exe` to run.
+
+Make sure your `sync.ini` file is in the same directory as `sync.exe`.
 
 ## Compatibility Notes
 
