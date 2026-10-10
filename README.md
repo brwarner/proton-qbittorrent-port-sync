@@ -13,6 +13,8 @@ There are three necessary settings: `ProtonBaseDir`, `ProtonRelativeLogFile` and
 * `ProtonRelativeLogFile` is the relative path of the log file within a ProtonVPN version folder. It should be `ServiceData\Logs\service-logs.txt`
 * `TorrentClientAddress` is the address of your qBittorrent's web interface. Usually it's `http://127.0.0.1:8080`
 
+To use the defaults, just rename `example.ini` to `sync.ini`
+
 ## Building
 
 In order to have this program run automatically when ProtonVPN connects, you'll need to build it into an exe file.
